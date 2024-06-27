@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles/style.css"/>
+		<script language="javascript" type="text/javascript" src="./scripts/cards.js"  defer async></script>
+		<title>Card Game</title>
+	</head>
+	<body id="cuerpo" onload= "" >
+		<div id="form">
+			<form id="inputUser">
+				<label for="userRows">Rows:</label>
+				<input type="number" id="userRows" name="userRows" value="3" min="1" max="20">
+				<label for="userColumns">Columns:</label>
+				<input type="number" id="userColumns" name="userColumns" value="6" min="1" max="20">
+				<button type="button" onclick="userInput();">Start Game</button>
+			</form>
+		</div>
+		<div id="Timer">
+			<h1 id="secondsRemaining"></h1>
+		</div>
+		<div id="images">
+		</div>		
+	</body>
+</html>
